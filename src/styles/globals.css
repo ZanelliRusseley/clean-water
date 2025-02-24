@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  background-image: url('/assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@layer components {
+  .botao {
+      @apply text-2xl text-light-blue bg-light-white border-solid border-gray border-4 px-8 py-4 font-pt font-bold rounded-full transition duration-300 transform hover:scale-110;
+  }
+  .nivel {
+      @apply flex justify-center items-center w-16 h-16 border-solid border-gray border-4 bg-light-white text-4xl font-bold font-pt rounded-full transition-transform duration-300 hover:scale-110;
+  }
+  .instrucao {
+      @apply text-4xl text-white font-pt font-bold text-stroke-2 text-stroke-gray
+  }
+  .texto {
+      @apply text-2xl text-white font-pt font-bold text-stroke-1 text-stroke-darkGray
+  }
+  .button-controls {
+    @apply bg-light-white   p-1 w-14 h-12 border-4 border-gray  rounded-2xl
+  }
+  
+}
+
+@layer utilities {
+  .text-stroke-1 {
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;
+  }
+  .text-stroke-2 {
+    -webkit-text-stroke: 2px black;
+    text-stroke: 2px black;
+  }
+  .text-stroke-gray {
+    -webkit-text-stroke-color: #336C82;
+    text-stroke-color: #336C82;
+  }
+  .text-stroke-darkGray {
+    -webkit-text-stroke-color: #231E1E;
+    text-stroke-color: #231E1E
+    ;
+  }
+}
