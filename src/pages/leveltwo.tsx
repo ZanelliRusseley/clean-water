@@ -11,9 +11,9 @@ export default function LevelTwo() {
       topHit={130}
       challenge='A cada dois movimentos a sacola de lixo irá mover uma casa para direita'
       obstacle={AquaticBomb}
-      obstaclePoints1={{x: 140, y: 130}}
-      obstaclePoints2={{x: 0, y: 130}}
-      
+      obstaclePoints1={{ x: 140, y: 130 }}
+      obstaclePoints2={{ x: 0, y: 130 }} 
+      gates={[]}      
     />
   )
 }

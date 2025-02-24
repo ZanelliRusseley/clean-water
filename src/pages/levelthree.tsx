@@ -11,8 +11,8 @@ export default function LevelThree() {
       topHit={260}
       challenge='A cada três movimentos a sacola de lixo irá mover uma casa para baixo'
       obstacle={AquaticBomb}
-      obstaclePoints1={{x: 420, y: 0}}
-      obstaclePoints2={{x: 420, y: 130}}
-    />
+      obstaclePoints1={{ x: 420, y: 0 }}
+      obstaclePoints2={{ x: 420, y: 130 }}
+      gates={[]}    />
   )
 }

@@ -79,10 +79,12 @@ export default function Game({
       }
 
       if (
-        (Math.abs(nextLeft - obstaclePoints1?.x) <= 20 &&
-        Math.abs(nextTop - obstaclePoints1?.y) <= 20) ||
-        (Math.abs(nextLeft - obstaclePoints2?.x) <= 20 &&
-        Math.abs(nextTop - obstaclePoints2?.y) <= 20)
+        (obstaclePoints1 &&
+          Math.abs(nextLeft - obstaclePoints1.x) <= 20 &&
+          Math.abs(nextTop - obstaclePoints1.y) <= 20) ||
+        (obstaclePoints2 &&
+          Math.abs(nextLeft - obstaclePoints2.x) <= 20 &&
+          Math.abs(nextTop - obstaclePoints2.y) <= 20)
       ) {
         setTop(nextTop);
         setLeft(nextLeft);

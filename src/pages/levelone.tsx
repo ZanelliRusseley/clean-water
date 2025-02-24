@@ -10,7 +10,8 @@ export default function LevelOne() {
       leftHit={560}
       topHit={130}
       obstacle={AquaticBomb}
-      obstaclePoints1={{ x: 280, y: 130 }}
-    />
+      obstaclePoints1={{ x: 280, y: 130 }} 
+      gates={[]} 
+      challenge={undefined}    />
   );
 }
